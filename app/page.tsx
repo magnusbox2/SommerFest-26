@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   // Change this to your target date
-  const targetDate = new Date("2026-06-20T17:00:00");
+  const targetDate = new Date("2026-06-20T17:00:00").getDate();
 
   const getTimeLeft = () => {
-    const difference = targetDate - new Date();
+    const difference = targetDate - new Date().getDate();
 
     if (difference <= 0) {
       return null;
