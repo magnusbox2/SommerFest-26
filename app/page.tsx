@@ -1,15 +1,14 @@
-// app/page.js
+// app/page.tsx
 
 "use client";
 
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // Change this to your target date
-  const targetDate = new Date("2026-06-20T17:00:00").getDate();
+  const targetDate = new Date("2026-06-20T17:00:00").getTime();
 
   const getTimeLeft = () => {
-    const difference = targetDate - new Date().getDate();
+    const difference = targetDate - new Date().getTime();
 
     if (difference <= 0) {
       return null;
@@ -47,7 +46,7 @@ export default function Home() {
       }}
     >
       <h1 style={{ fontSize: "4rem", marginBottom: "2rem" }}>
-        Tid til Sommerfest 2026!
+        Countdown
       </h1>
 
       {timeLeft ? (
