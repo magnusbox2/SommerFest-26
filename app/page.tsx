@@ -46,7 +46,7 @@ export default function Home() {
       }}
     >
       <h1 style={{ fontSize: "4rem", marginBottom: "2rem" }}>
-        Countdown
+        Tid til Sommerfest
       </h1>
 
       {timeLeft ? (
